@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="paise.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Basic Budget Plan</h1>
+        <div class="input-section">
+            <label for="basicSalary">Enter your Salary: </label>
+            <input type="number" id="basicSalary" placeholder="Enter salary">
+            <button onclick="calculateBasicBudget()">Calculate</button>
+        </div>
+
+        <div class="result-section">
+            <h2>Budget Distribution</h2>
+            <div id="basicBudgetResult">
+                <p>Home Expenses: <span id="basicHomeExpenses">₹0</span></p>
+                <p>Charity: <span id="basicCharity">₹0</span></p>
+                <p>Savings: <span id="basicSavings">₹0</span></p>
+                <p>Investment: <span id="basicInvestment">₹0</span></p>
+                <p>Personal Expenses: <span id="basicPersonalExpenses">₹0</span></p>
+                <p>Total: <span id="basicTotalAmount">₹0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container premium">
+        <h1>Premium Budget Plan</h1>
+        <div class="input-section">
+            <label for="premiumSalary">Enter your Salary: </label>
+            <input type="number" id="premiumSalary" placeholder="Enter salary">
+            <button onclick="calculatePremiumBudget()">Calculate</button>
+        </div>
+
+        <div class="result-section">
+            <h2>Budget Distribution</h2>
+            <div id="premiumBudgetResult">
+                <p>Home Expenses (Food + Electricity + Water + Subscription): <span id="premiumHomeExpenses">₹0</span></p>
+                <p>Charity: <span id="premiumCharity">₹0</span></p>
+                <p>Savings: <span id="premiumSavings">₹0</span></p>
+                <p>Investment: <span id="premiumInvestment">₹0</span></p>
+                <p>Personal Expenses: <span id="premiumPersonalExpenses">₹0</span></p>
+                <p>Education and Skill Development: <span id="premiumEducation">₹0</span></p>
+                <p>Health and Wellness Insurance: <span id="premiumHealth">₹0</span></p>
+                <p>Travel and Leisure: <span id="premiumTravel">₹0</span></p>
+                <p>Total: <span id="premiumTotalAmount">₹0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="paise.js"></script>
+</body>
+</html>
